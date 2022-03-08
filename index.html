@@ -1,20 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>  <!--All HTML documents must start with a <!DOCTYPE> declaration.The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.-->
+<html lang="en"> <!--The HTML lang attribute is used to identify the language of text content on the web. This information helps search engines return language specific results, and it is also used by screen readers that switch language profiles to provide the correct accent and pronunciation.-->
+<!-- ======================================-->
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Mirian Zi</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+
+
+
+<head> 
+  <!--=======================================
+    * The <head> tag contains metadata (document title, character set, styles, links, scripts), specific information about the web page that is not displayed to the user. Metadata provides browsers and search engines with technical information about the web page.
+    * <meta> tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.
+      ========================================-->
+  <meta charset="utf-8"> <!--The HTML charset Attribute; To display an HTML page correctly, a web browser must know the character set used in the page. This is specified in the <meta> tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--<meta> viewport element for responsive web design; This gives the browser instructions on how to control the page's dimensions and scaling.-->
+
+  <title>Mirian Zi</title>  <!--The <title> tag defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.-->
+  <meta name="description" content="UX Design Portfolio"> <!--Define a description of your web page-->
+  <meta name="keywords" content="UX, Portfolio, Interaction, User, Design" > <!--Define keywords for search engines-->
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+ <!-- <link rel="icon" href="assets/img/favicon.png" > -->
+    <!-- =================================================
+      * The <link> tag defines the relationship between the current document and an external resource.
+      * The <link> tag is most often used to link to external style sheets or to add a favicon to your website.
+      * The <link> element is an empty element, it contains attributes only.
+      * rel attribute specifies the relationship between the current document and the linked document/resource.
+      * href attribute specifies the location of the linked document, URL
+    ===========================================================-->
+
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" >
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" >
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,37 +52,67 @@
   ======================================================== -->
 </head>
 
+
+
+
+
+
 <body>
+<!-- =======================================================
+  * The <body> tag defines the document's body.
+  * The <body> element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+    Note: There can only be one <body> element in an HTML document.
+      =====================================================-->
 
-  <!-- ======= Header ======= -->
+
+  <!-- ======= Header =======
+     * The <header> element represents a container for introductory content or a set of navigational links.
+     * A <header> element typically contains: one or more heading elements (<h1> - <h6>); logo or icon; authorship information.
+    * An id on a <header> tag assigns an identifier to the header.The value of the id attribute must be unique within the HTML document.
+    * The id attribute is used to point to a specific style declaration in a style sheet
+    * The <div> tag defines a division or a section in an HTML document.
+    * The <div> tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.
+    * The HTML class attribute is used to specify a class for an HTML element. The class attribute is often used to point to a class name in a style sheet.
+    * The <a> tag defines a hyperlink, which is used to link from one page to another.
+    * The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+    * The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
+    * The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
+    * The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.
+    * e.g. A <span> element which is used to color a part of a text: <p>My mother has <span style="color:blue">blue</span> eyes.</p>; 
+    ==========--> 
+    
   <header id="header">
-    <div class="container">
+    <!--
+      <div class="container">
+      -->
 
-      <h1><a href="index.html">Mirian Zi</a></h1>
+      <h1><a href="index.html">Mirian Zi</a></h1> 
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
       <h2>I'm a passionate <span>UX designer</span> from Bay Area</h2>
 
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
+        <ul> <!--The <ul> tag defines an unordered (bulleted) list.The <li> tag defines a list item.-->
+         <!-- <li><a class="nav-link active" href="#header">Home</a></li> -->  <!--href="#some-id" would scroll to an element on the current page such as <div id="some-id">.-->
+          <li><a class="nav-link" href="#about">About</a></li> <!--href="#" doesn't specify an id name, but does have a corresponding location - the top of the page. Clicking an anchor with href="#" will move the scroll position to the top.-->
           <li><a class="nav-link" href="#resume">Resume</a></li>
-          <li><a class="nav-link" href="#services">Services</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <!--<li><a class="nav-link" href="#services">  </a></li>-->
+          <li><a class="nav-link" href="#project">Project</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i class="bi bi-list mobile-nav-toggle"></i>  <!--The <i> tag defines a part of text in an alternate voice or mood. -->
       </nav><!-- .navbar -->
 
+     <!--
       <div class="social-links">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
+    -->
 
-    </div>
+    <!--</div>-->
   </header><!-- End Header -->
 
   <!-- ======= About Section ======= -->
