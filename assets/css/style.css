@@ -8,6 +8,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+a {
+  color:#D97706 !important;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #EEE7E3;
@@ -177,7 +182,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar li {
   position: relative;
-  color: #D97706;
 }
 .navbar li + li {
   margin-left: 30px;
