@@ -9,6 +9,17 @@
 # General
 --------------------------------------------------------------*/
 
+ul.nav li a, ul.nav li a:visited {
+  color: #D97706 !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+  color: #D97706 !important;
+}
+
+ul.nav li.active a {
+  color: #D97706 !important;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -37,10 +48,6 @@ body::before {
 a {
   color: #D97706;
   text-decoration: none;
-}
-
-a: .navbar{
-  color: #D97706 !important;
 }
 
 a:hover {
