@@ -9,15 +9,7 @@
 # General
 --------------------------------------------------------------*/
 
-ul.nav li a, ul.nav li a:visited {
-  color: #D97706 !important;
-}
-
-ul.nav li a:hover, ul.nav li a:active {
-  color: #D97706 !important;
-}
-
-ul.nav li.active a {
+a{
   color: #D97706 !important;
 }
 
