@@ -956,14 +956,14 @@ section .container {
   color: #343434;
 }
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  background-color:#EEE7E3(255, 255, 255, 0.11);
+  background-color:#343434(255, 255, 255, 0.11);
 }
 .contact .php-email-form input::-moz-placeholder, .contact .php-email-form textarea::-moz-placeholder {
-  color:#EEE7E3(255, 255, 255, 0.3);
+  color:#343434(255, 255, 255, 0.3);
   opacity: 1;
 }
 .contact .php-email-form input::placeholder, .contact .php-email-form textarea::placeholder {
-  color: #EEE7E3(255, 255, 255, 0.3);
+  color: #343434(255, 255, 255, 0.3);
   opacity: 1;
 }
 .contact .php-email-form input {
