@@ -177,6 +177,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar li {
   position: relative;
+  color: #D97706;
 }
 .navbar li + li {
   margin-left: 30px;
