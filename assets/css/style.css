@@ -39,6 +39,10 @@ a {
   text-decoration: none;
 }
 
+a: .navbar{
+  color: #D97706 !important;
+}
+
 a:hover {
   color: #D97706;
   text-decoration: none;
